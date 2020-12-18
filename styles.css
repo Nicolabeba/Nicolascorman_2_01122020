@@ -7,6 +7,7 @@ body {
       margin: auto;
 }
 
+
 header {
     display: flex;
     justify-content: space-between;
@@ -25,11 +26,13 @@ header nav ul li a {
     font-weight: 400;
 }
     
-a:hover {
+header nav ul li a:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
     padding-top: 64px;
     }
+
+
 
 .searcher h1{
     font-weight: 600;
@@ -90,6 +93,7 @@ a:hover {
 }
 
 
+
 .filters {
     display: flex;
     height: 80px;
@@ -121,7 +125,7 @@ a:hover {
 }
 
 .filters .filterBoxes .filterBox:hover {
-color: #0065FC;
+    color: #0065FC;
 }
 
 .filters .filterBoxes i {
@@ -136,20 +140,229 @@ color: #0065FC;
     color: #0065FC;
 }
 
-.infoVille{
+
+
+.infoTown{
     display: flex;
     align-items: center;
+    
 }
 
-.infoVille p{
+.infoTown p {
     margin-left: 10px;
 }
 
-.infoVille i{
+.infoTown i{
     background: #0065FC;
     color: white;
     border-radius: 20px;
 }
 
 
+
+#hebergements{
+    background: #F2F2F2;
+    border-radius: 10px;
+    max-width: 880px;
+    max-height: 680px;
+    padding: 10px 20px 20px 20px;
+}
+
+#hebergements h1{
+    padding-top: 20px;
+    margin-left: 20px;
+    
+    
+}
+
+
+.hostingContainer{
+    background: #F2F2F2;
+    border-radius: 10px;
+    max-width: 880px;
+    max-height: 680px;
+    display: flex;   
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+
+
+.houseClick{
+    width: 250px;
+    height: 200px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+    background: white;
+    display: flex;
+    flex-direction: column; 
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    cursor: pointer;
+    border: 5px;
+    
+}
+
+.houseClick img{
+    width: 240px;
+    height: 114px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    display: block;
+    max-width: 98%;
+    padding: 5px;
+    border: 5px;
+}
+
+.houseClick h3{
+    margin: 0px;
+    padding: 0px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.houseClick p{
+    margin: 5px;
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.houseClick p span{
+    font-weight: 900;
+}
+
+.rating{
+    margin-left: 10px;
+}
+
+.rating .fas{
+    padding-top: 0px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    color:#0065FC;   
+}
+
+/*.rating .fas:nth-child(n),
+.rating .fas:nth-child(2n),
+.rating .fas:nth-child(3n),
+.rating .fas:nth-child(4n),*/
+.rating .fas:nth-child(5n)
+{
+    color:#F2F2F2;   
+}
+
+
+.rating2{
+    margin-left: 10px;
+}
+
+.rating2 .fas{
+    padding-top: 0px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    color:#0065FC;   
+}
+
+/*.rating2 .fas:nth-child(n),
+.rating2 .fas:nth-child(2n),
+.rating2 .fas:nth-child(3n),
+.rating2 .fas:nth-child(4n),
+.rating2 .fas:nth-child(5n)
+{
+    color:#F2F2F2;
+}*/ 
+
+
+.rating3{
+    margin-left: 10px;
+}
+
+.rating3 .fas{
+    padding-top: 0px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    color:#0065FC;   
+}
+
+/*.rating3 .fas:nth-child(n),
+.rating3 .fas:nth-child(2n),
+.rating3 .fas:nth-child(3n),
+.rating3 .fas:nth-child(4n),*/
+.rating3 .fas:nth-child(5n){
+    color:#F2F2F2;
+} 
+
+
+.rating4{
+    margin-left: 10px;
+}
+
+.rating4 .fas{
+    padding-top: 0px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    color:#0065FC;    
+}
+
+/*.rating4 .fas:nth-child(n),
+.rating4 .fas:nth-child(2n),
+.rating4 .fas:nth-child(3n)*/
+.rating4 .fas:nth-child(4n),
+.rating4 .fas:nth-child(5n){
+    color:#F2F2F2;
+} 
+
+.rating5{
+    margin-left: 10px;
+}
+
+.rating5 .fas{
+    padding-top: 0px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    color:#0065FC;    
+}
+
+/*.rating5 .fas:nth-child(n),
+.rating5 .fas:nth-child(2n),
+.rating5 .fas:nth-child(3n),
+.rating5 .fas:nth-child(4n),*/
+.rating5 .fas:nth-child(5n){
+    color:#F2F2F2;
+} 
+
+.rating6{
+    margin-left: 10px;
+}
+
+.rating6 .fas{
+    padding-top: 0px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    color:#0065FC;    
+}
+
+/*.rating6 .fas:nth-child(n),
+.rating6 .fas:nth-child(2n),
+.rating6 .fas:nth-child(3n),
+.rating6 .fas:nth-child(4n),
+.rating6 .fas:nth-child(5n){
+    color:#F2F2F2;
+} */
+
+#portrait{
+    width:240px;
+    height:114px;
+    background: center/100% url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg) no-repeat;
+    margin: 5px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: block;
+    max-width: 98%;
+    border: 5px
+}
 
