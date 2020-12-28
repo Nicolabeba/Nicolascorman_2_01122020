@@ -3,13 +3,15 @@
 body {
     font-family: 'Raleway', sans-serif;
     background-color: white;
-    margin-left: 50px;
-    margin-right: 50px;
        
 }
 
 :focus {
     outline: 0;
+}
+
+::-moz-placeholder {
+    opacity: 1;
 }
 
 .headMobile{
@@ -22,6 +24,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 header nav ul li {
@@ -44,6 +48,12 @@ header nav ul li a:hover {
 .searcher h2{
     font-weight: 600;
     margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.searcher p{
+    margin-left: 20px;
 }
 
 .searcherBanner{
@@ -54,6 +64,7 @@ header nav ul li a:hover {
     display: flex; 
     justify-content: stretch;
     align-items: center;
+    margin-left: 20px;
     
 }
 
@@ -83,10 +94,14 @@ header nav ul li a:hover {
 
 }
 
-#searchBox::placeholder {
+#searchBox::placeholder{
     color: black;
-    padding-left: 15px;
+    
 }   
+
+#searchBox:placeholder-shown{
+    padding-left: 15px;
+}
     
 #searchButton {
     background-color: #0065FC;
@@ -112,10 +127,11 @@ header nav ul li a:hover {
 
 .filters {
     display: flex;
+    flex-direction: column;
     min-height: 80px;
-    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    margin-left: 20px;
 }
 
 .filters h2{
@@ -123,18 +139,25 @@ header nav ul li a:hover {
 
 }
 
-.filters .filterBoxes {
+.boxArange{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.filterBoxes {
     width: fit-content;
     border-radius: 20px;
     border: 1px solid #F2F2F2;
     display: flex;
-    margin-right: 30px;
     flex-wrap: wrap;
+    margin-right: 30px;
     margin: 10px
     
 }
 
-.filters .filterBoxes .filterBox {
+.filterBox {
     background: none;
     border: none;
     font-family: 'Raleway', sans-serif;
@@ -144,11 +167,11 @@ header nav ul li a:hover {
     height: 40px;
 }
 
-.filters .filterBoxes .filterBox:hover {
+.filterBox:hover {
     color: #0065FC;
 }
 
-.filters .filterBoxes i {
+.filterBoxes i {
     width: 40px;
     height: 40px;
     border-radius: 20px;
@@ -167,6 +190,7 @@ header nav ul li a:hover {
     align-items: center;
     width: auto;
     margin: 5px; 
+    margin-left: 20px;
     
 }
 
@@ -190,7 +214,7 @@ header nav ul li a:hover {
 }
 
 #housing{
-    display: none;
+   display: none;
 }
 
 #hebergements{
@@ -209,6 +233,7 @@ header nav ul li a:hover {
 #hebergements h2{
     margin-left: 20px;
     font-size: 18px;
+
 }
 
 .hostingContainer{
@@ -530,6 +555,10 @@ header nav ul li a:hover {
     font-size: 14px;
 }
 
+#activity h2{
+    margin-left: 30px;
+}
+
 .boxActivities{
     display: flex;   
     justify-content: space-around;
@@ -644,8 +673,10 @@ margin: 8px;
 @media screen and (max-width:800px) {
     
     body {
+        display: initial;
         font-family: 'Raleway', sans-serif;
         background-color: white;
+        margin: auto;
 
     }
 
@@ -657,7 +688,8 @@ margin: 8px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        
+        
         
     }
 
@@ -690,7 +722,7 @@ margin: 8px;
         display: flex;
         border-bottom: 1px solid #F2F2F2;
         justify-content: center;
-        width: 100%;
+        width: 110%;
         
         
     }
@@ -711,11 +743,13 @@ margin: 8px;
         border-top: none;
         border-bottom: 2px solid #0065FC;
         padding-bottom: 20px;
+        color: #0065FC;
     }
 
     .searcherBanner{
         border-radius: 15px;
         max-width: 340px;
+        margin-right: 20px;
     }
 
     .searcherBanner :nth-child(3n){
@@ -726,15 +760,21 @@ margin: 8px;
     .searcherBanner :nth-child(4n) {
         display: initial;
         background-color: #0065FC;
-        width: 50px;
-        height: 50px;
+        min-width: 50px;
+        min-height: 50px;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
         font-size: 18px;
         color: white;
         border: 1px solid #F2F2F2;
         cursor: pointer;
+        
 
+    }
+
+    .boxArange{
+        max-width: 470px;
+        
     }
 
     .hebergementsPopular{
@@ -746,6 +786,12 @@ margin: 8px;
         width: 100%;
         padding: 10px;
         padding-right: 20px;
+        margin: auto;
+        border-radius: initial;
+    }
+
+    #popular h2{
+        margin-left: 30px;
     }
 
     #hebergements{
@@ -774,6 +820,7 @@ margin: 8px;
     .popularClick{
         box-shadow: 4px 4px 6px #cac8c8;
         margin: 5px;
+        
     }
 
     
@@ -813,5 +860,6 @@ margin: 8px;
 
    
 }
+
 
 
