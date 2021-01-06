@@ -213,10 +213,6 @@ header nav ul li a:hover {
     
 }
 
-#housing{
-   display: none;
-}
-
 #hebergements{
     background: #F2F2F2;
     border-radius: 10px;
@@ -652,7 +648,7 @@ header nav ul li a:hover {
     background: #F2F2F2;
     margin-top: 40px;
     width: auto;
-    
+    padding-left: 40px;
     
 }
 
@@ -669,6 +665,12 @@ margin: 8px;
 
 }
 
+@media screen and (min-width:1400px) {
+    .mainContent {
+        width: 80%;
+        margin: auto;
+    }
+}
 
 @media screen and (max-width:800px) {
     
@@ -854,7 +856,7 @@ margin: 8px;
 
     #footerPres{
         flex-direction: column;
-        text-align: center;
+        
         
     }
 
