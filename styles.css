@@ -3,6 +3,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     background-color: white;
+    margin-top: 0px;
        
 }
 
@@ -14,34 +15,36 @@ body {
     opacity: 1;
 }
 
-header{
+header nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 30px;
     margin-right: 20px;
     flex-wrap: wrap;
 
 }
 
-header .logo {
+header nav .logo {
     margin-right: auto;
     margin-left: 20px;
+    margin-top: 20px;
+    
     
 }
 
-header a {
+header nav a {
     color: black;
     text-decoration: none;
     padding-right: 20px; 
-    margin: auto 0px auto 0px;
+    margin: 0px 0px auto 0px;
     text-align: right;
+    padding-top: 35px;
 }
 
-header a:hover {
+header nav a:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 49px;
+    
 }
 
 .searcher h2{
@@ -686,16 +689,16 @@ margin: 8px;
     }
 
 
-    header :nth-child(2){
+    header nav :nth-child(2){
         order: 3;
     }
 
-    header :nth-child(3) {
+    header nav :nth-child(3) {
         order: 4;  
     }
 
-    header :nth-child(2),
-    header :nth-child(3) {
+    header nav :nth-child(2),
+    header nav :nth-child(3) {
         border-bottom: 1px solid #F2F2F2;
         padding: 0px;
         padding-bottom: 20px;
@@ -706,8 +709,8 @@ margin: 8px;
         
     }
 
-    header :nth-child(2):hover,
-    header :nth-child(3):hover{
+    header nav :nth-child(2):hover,
+    header nav :nth-child(3):hover{
         border-top: none;
         border-bottom: 2px solid #0065FC;
         padding-bottom: 20px;
@@ -715,7 +718,7 @@ margin: 8px;
 
     }
 
-    header :nth-child(4) {
+    header nav :nth-child(4) {
         width: 50%; 
         color: #0065FC;
         border-top: none;
@@ -723,7 +726,7 @@ margin: 8px;
         font-weight: 600;
     }
 
-    header :nth-child(4):hover {
+    header nav :nth-child(4):hover {
         border-top: none;
     }
 
