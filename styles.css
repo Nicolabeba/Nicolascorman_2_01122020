@@ -129,7 +129,7 @@ header nav a:hover {
 
 .filters {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     min-height: 80px;
     flex-wrap: wrap;
     margin-bottom: 20px;
@@ -755,11 +755,6 @@ margin: 8px;
         cursor: pointer;
         
 
-    }
-
-    .boxArange{
-        max-width: 470px;
-        
     }
 
     .hebergementsPopular{
